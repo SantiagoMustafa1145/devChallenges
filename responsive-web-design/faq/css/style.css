@@ -69,12 +69,13 @@ header {
 main {
   background-color: var(--main-bg);
   align-content: center;
-  padding: 42px;
+  padding: 42px 8px;
   flex: 1;
 
   section {
     margin: auto;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     padding: 16px;
     display: flex;
     flex-direction: column;
