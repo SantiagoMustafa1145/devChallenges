@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Testimonial Page | devChallenges.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      :root {
+        --start-fill: #f5c044;
+        --start-empty: #52525a;
+        --check-fill: #4ca154;
+        --title-color: #18181b;
+        --text-check: #d4d4d8;
+        --bg: #fafaf9;
+        --bg-card: #fff;
+
+        --size-heading: 2.25rem;
+        --size-body: 1.25rem;
+        --size-card: 1rem;
+        --size-list: 0.875rem;
+
+        font-family: "Sora", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100dvh;
+        background-color: var(--bg);
+        padding: 40px 8px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .reviewers {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          img {
+            background-color: var(--start-fill);
+            border-radius: 99999px;
+            padding: 8px;
+          }
+        }
+      }
+      .title {
+        font-size: var(--size-heading);
+      }
+      .principal-body-text {
+        font-size: var(--size-body);
+      }
+      .list {
+        font-size: var(--size-list);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+
+      .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 8px;
+      }
+      .card {
+        font-size: var(--size-card);
+        border-radius: 16px;
+        background-color: var(--bg-card);
+        padding: 29px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        footer {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        header {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+
+          .valuation {
+            display: flex;
+            align-items: baseline;
+          }
+        }
+      }
+
+      @media (width >= 760px) {
+        body {
+          padding: 40px;
+        }
+        .reviews {
+          justify-content: center;
+          align-items: center;
+          .card {
+            max-width: 450px;
+          }
+          .card:first-child {
+            margin-left: 20%;
+          }
+          .card:last-child {
+            margin-right: 20%;
+          }
+        }
+      }
+
+      @media (width >= 1100px) {
+        body {
+          padding: 80px;
+        }
+        .container {
+          flex-direction: row;
+          height: 100%;
+          align-items: center;
+        }
+
+        .reviewers {
+          max-width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+  ⭐️
+
+  Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.
+  
+  Checklist to Review an Academic Paper
+  
+  Peer Review Checklist
+  
+  Checklist for Editors, Reviewers, and Authors of SPIE Journals
+  
+  Samantha Lee
+  
+  The checklist ensures that the review process is thorough
+  
+  Rachel Patel
+  
+  I highly recommend the Writecream Business Description -->
+
+    <main class="container">
+      <section class="reviewers">
+        <div>
+          <img src="./resources/Star_fill_gray.svg" alt="star" width="42" />
+          <h1 class="title">Reviewers</h1>
+          <p class="principal-body-text">
+            Reviewers is where people can access guidelines, checklists, and
+            other tools to assist them in reviewing papers or manuscripts. It
+            provides a structured approach to ensure that the review process is
+            thorough, efficient, and consistent.
+          </p>
+        </div>
+        <ul class="list">
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt="Checked ring"
+              width="20"
+            />
+            Checklist to Review an Academic Paper
+          </li>
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt="Checked ring"
+              width="20"
+            />
+            Peer Review Checklist
+          </li>
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt="Checked ring"
+              width="20"
+            />
+            Checklist for Editors, Reviewers, and Authors of SPIE Journals.
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <article class="card">
+          <header>
+            <img src="./resources/google-png.png" alt="Google icon" />
+            <div class="valuation">
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill_gray.svg" alt="star" />
+            </div>
+          </header>
+          <footer>
+            <h3>Samantha Lee</h3>
+            <p>The checklist ensures that the review process is thorough</p>
+          </footer>
+        </article>
+        <article class="card">
+          <header>
+            <img src="./resources/meta-png.png" alt="Google icon" />
+            <div class="valuation">
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+              <img src="./resources/Star_fill.svg" alt="star" />
+            </div>
+          </header>
+          <footer>
+            <h3>Rachel Patel</h3>
+            <p>I highly recommend the Writecream Business Description</p>
+          </footer>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
